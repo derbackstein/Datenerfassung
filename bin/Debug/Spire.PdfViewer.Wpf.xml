@@ -1,0 +1,1076 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Spire.PdfViewer.Wpf</name>
+    </assembly>
+    <members>
+        <member name="M:Spire.PdfViewer.PdfViewerLicenseProtector.ApplyInternalLicenseToPdf(Spire.Pdf.PdfDocument)">
+            <summary>
+            Apply internal license to pdf.
+            </summary>
+            <param name="document">The document</param>
+        </member>
+        <member name="T:Spire.PdfViewer.Drawing.PdfViewerExceptions">
+            <summary>
+            Load pdf document throw exception information
+            </summary>
+        </member>
+        <member name="M:Spire.PdfViewer.Drawing.PdfViewerExceptions.#ctor">
+            <summary>
+            Initializes a new instance of the class.
+            </summary>
+        </member>
+        <member name="M:Spire.PdfViewer.Drawing.PdfViewerExceptions.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the class.
+            </summary>
+            <param name="exception"></param>
+        </member>
+        <member name="T:Spire.PdfViewer.Drawing.RenderPageExceptionEventHandler">
+            <summary>
+            Define a delegate,when rendering a page,handing exceptions
+            </summary>
+            <param name="args"></param>
+        </member>
+        <member name="T:Spire.PdfViewer.DocumentOpenedEventHandler">
+            <summary>
+            Provides document opened events
+            </summary>
+            <param name="sender"></param>
+            <param name="args"></param>
+        </member>
+        <member name="T:Spire.PdfViewer.DocumentClosedEventHandler">
+            <summary>
+            Provides document closed events
+            </summary>
+            <param name="sender"></param>
+            <param name="args"></param>
+        </member>
+        <member name="T:Spire.PdfViewer.PageNumberChangedEventHandler">
+            <summary>
+            Provides page number changed events.
+            </summary>
+            <param name="sender"></param>
+            <param name="args"></param>
+        </member>
+        <member name="T:Spire.PdfViewer.ZoomFactorChangedEventHandler">
+            <summary>
+            Provides zoom factor changed events.
+            </summary>
+            <param name="sender"></param>
+            <param name="zoomFactor"></param>
+        </member>
+        <member name="T:Spire.PdfViewer.ZoomChangedEventHandler">
+            <summary>
+            Provides zoom percentage changed events
+            </summary>
+            <param name="sender"></param>
+            <param name="percentage"></param>
+        </member>
+        <member name="T:Spire.PdfViewer.Wpf.DocumentToolbar">
+            <summary>
+            DocumentToolbar
+            </summary>
+        </member>
+        <member name="M:Spire.PdfViewer.Wpf.DocumentToolbar.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:Spire.PdfViewer.Wpf.FreeInforBox">
+            <summary>
+            FreeInforBox.xaml 的交互逻辑
+            </summary>
+            <summary>
+            FreeInforBox
+            </summary>
+        </member>
+        <member name="M:Spire.PdfViewer.Wpf.FreeInforBox.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:Spire.PdfViewer.Wpf.PasswordDlg">
+            <summary>
+            Summary description for password.
+            </summary>
+        </member>
+        <member name="T:Spire.PdfViewer.Wpf.PdfDocumentAttachment">
+            <summary>
+            PDF document attachment
+            </summary>
+        </member>
+        <member name="P:Spire.PdfViewer.Wpf.PdfDocumentAttachment.FileName">
+            <summary>
+            Attachment file name
+            </summary>
+        </member>
+        <member name="P:Spire.PdfViewer.Wpf.PdfDocumentAttachment.Description">
+            <summary>
+            Attachment description
+            </summary>
+        </member>
+        <member name="P:Spire.PdfViewer.Wpf.PdfDocumentAttachment.MimeType">
+            <summary>
+            Attachment mime type
+            </summary>
+        </member>
+        <member name="P:Spire.PdfViewer.Wpf.PdfDocumentAttachment.CreationTime">
+            <summary>
+            Attachment creat time
+            </summary>
+        </member>
+        <member name="P:Spire.PdfViewer.Wpf.PdfDocumentAttachment.ModifyTime">
+            <summary>
+            Attachment modify time
+            </summary>
+        </member>
+        <member name="P:Spire.PdfViewer.Wpf.PdfDocumentAttachment.Data">
+            <summary>
+            Attachment file data
+            </summary>
+        </member>
+        <member name="M:Spire.PdfViewer.Wpf.PdfDocumentAttachment.SaveAS(System.String)">
+            <summary>
+            Exported attachment data to file
+            </summary>
+            <param name="filePath"></param>
+        </member>
+        <member name="T:Spire.PdfViewer.Wpf.PdfDocumentAttachmentAnnotation">
+            <summary>
+            PDF document attachment annotation
+            </summary>
+        </member>
+        <member name="P:Spire.PdfViewer.Wpf.PdfDocumentAttachmentAnnotation.FileName">
+            <summary>
+            Attachment file name
+            </summary>
+        </member>
+        <member name="P:Spire.PdfViewer.Wpf.PdfDocumentAttachmentAnnotation.Text">
+            <summary>
+            Attachment annotation Text
+            </summary>
+        </member>
+        <member name="P:Spire.PdfViewer.Wpf.PdfDocumentAttachmentAnnotation.PageIndex">
+            <summary>
+            Attachment annotation page index
+            </summary>
+        </member>
+        <member name="P:Spire.PdfViewer.Wpf.PdfDocumentAttachmentAnnotation.Location">
+            <summary>
+            Attachment annotaion location in page 
+            </summary>
+        </member>
+        <member name="P:Spire.PdfViewer.Wpf.PdfDocumentAttachmentAnnotation.Color">
+            <summary>
+            Attachment annotation text color
+            </summary>
+        </member>
+        <member name="P:Spire.PdfViewer.Wpf.PdfDocumentAttachmentAnnotation.Icon">
+            <summary>
+            Attachment annotation icon
+            </summary>
+        </member>
+        <member name="P:Spire.PdfViewer.Wpf.PdfDocumentAttachmentAnnotation.Data">
+            <summary>
+            Attachment annotaion file data
+            </summary>
+        </member>
+        <member name="M:Spire.PdfViewer.Wpf.PdfDocumentAttachmentAnnotation.SaveAs(System.String)">
+            <summary>
+            Exported attachment annotaion data to file
+            </summary>
+            <param name="filePath"></param>
+        </member>
+        <member name="P:Spire.PdfViewer.Wpf.PdfDocumentBookmark.Title">
+            <summary>
+            The title of current bookmark.
+            </summary>
+        </member>
+        <member name="P:Spire.PdfViewer.Wpf.PdfDocumentBookmark.Style">
+            <summary>
+            Bookmark style
+            </summary>
+        </member>
+        <member name="P:Spire.PdfViewer.Wpf.PdfDocumentBookmark.Color">
+            <summary>
+            The color of bookmark.
+            </summary>
+        </member>
+        <member name="P:Spire.PdfViewer.Wpf.PdfDocumentBookmark.Id">
+            <summary>
+            Bookmark order.
+            </summary>
+        </member>
+        <member name="P:Spire.PdfViewer.Wpf.PdfDocumentBookmark.Destination">
+            <summary>
+            Bookmark to go to destination
+            </summary>
+        </member>
+        <member name="P:Spire.PdfViewer.Wpf.PdfDocumentBookmark.Previous">
+            <summary>
+            Previous sibling bookmark of current bookmark.
+            </summary>
+        </member>
+        <member name="P:Spire.PdfViewer.Wpf.PdfDocumentBookmark.Next">
+            <summary>
+            Next sibling bookmark of current bookmark.
+            </summary>
+        </member>
+        <member name="P:Spire.PdfViewer.Wpf.PdfDocumentBookmark.Children">
+            <summary>
+            All children object of current bookmark.
+            </summary>
+        </member>
+        <member name="M:Spire.PdfViewer.Wpf.PdfDocumentBookmark.Convert(Spire.Pdf.Bookmarks.PdfBookmark,Spire.PdfViewer.Wpf.PdfDocumentViewer)">
+             <summary>
+            Convert Spire.Pdf.Bookmarks.Pdfbookmark to Spire.PdfViewer.Forms.PdfDocumentBookmark.
+             </summary>
+             <param name="bookMark">Spire.Pdf.Bookmarks.Pdfbookmark</param>
+             <param name="viewer">Pdf document viewer.</param>
+             <returns>Spire.PdfViewer.Forms.PdfDocumentBookmark.</returns>
+        </member>
+        <member name="T:Spire.PdfViewer.Wpf.PdfDocumentBookmarkContainer">
+            <summary>
+            Root bookmark of PDF document
+            </summary>
+        </member>
+        <member name="F:Spire.PdfViewer.Wpf.PdfDocumentTextStyle.Regular">
+            <summary>
+            Regular text style.
+            </summary>
+        </member>
+        <member name="F:Spire.PdfViewer.Wpf.PdfDocumentTextStyle.Bold">
+            <summary>
+            Bold text style.
+            </summary>
+        </member>
+        <member name="F:Spire.PdfViewer.Wpf.PdfDocumentTextStyle.Italic">
+            <summary>
+            Italic text style.
+            </summary>
+        </member>
+        <member name="T:Spire.PdfViewer.Wpf.PdfPagePonit">
+             <summary>
+            location of PDF document bookmark 
+             </summary>
+        </member>
+        <member name="P:Spire.PdfViewer.Wpf.PdfDocumentViewer.IgnoreCase">
+            <summary>
+            find text ignorecase
+            </summary>
+        </member>
+        <member name="F:Spire.PdfViewer.Wpf.PdfDocumentViewer.m_pdfViewerLicenseProtector">
+            <summary>
+            The pdf viewer license protector.
+            </summary>
+        </member>
+        <member name="P:Spire.PdfViewer.Wpf.PdfDocumentViewer.FindTextHighLightColor">
+            <summary>
+            find text color
+            </summary>
+        </member>
+        <member name="P:Spire.PdfViewer.Wpf.PdfDocumentViewer.IsDocumentLoaded">
+            <summary>
+            Veryfy whether to PDF document loaded
+            </summary>
+        </member>
+        <member name="E:Spire.PdfViewer.Wpf.PdfDocumentViewer.PdfLoaded">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Spire.PdfViewer.Wpf.PdfDocumentViewer.ZoomFactor">
+            <summary>
+            Gets or sets the zoom factor. default value is 1.0 (original size).
+            </summary>
+        </member>
+        <member name="E:Spire.PdfViewer.Wpf.PdfDocumentViewer.ZoomChanged">
+            <summary>
+            Occurs zoom changed.
+            </summary>
+        </member>
+        <member name="P:Spire.PdfViewer.Wpf.PdfDocumentViewer.CurrentPageNumber">
+            <summary>
+            Gets current display page number
+            </summary>
+        </member>
+        <member name="P:Spire.PdfViewer.Wpf.PdfDocumentViewer.PageCount">
+            <summary>
+            Get PDF document total page count
+            </summary>
+        </member>
+        <member name="P:Spire.PdfViewer.Wpf.PdfDocumentViewer.FileName">
+            <summary>
+            Get PDF document file name.
+            </summary>
+        </member>
+        <member name="P:Spire.PdfViewer.Wpf.PdfDocumentViewer.PrintDocument">
+            <summary>
+            Gets the PrintDocument
+            </summary>
+        </member>
+        <member name="P:Spire.PdfViewer.Wpf.PdfDocumentViewer.ZoomMode">
+            <summary>
+            Gets or sets the zoom mode.
+            </summary>
+        </member>
+        <member name="P:Spire.PdfViewer.Wpf.PdfDocumentViewer.PrintDialog">
+            <summary>
+            Set print parnameters
+            </summary>
+        </member>
+        <member name="M:Spire.PdfViewer.Wpf.PdfDocumentViewer.Print(System.Boolean)">
+            <summary>
+            Print PdfDocument
+            </summary>
+            <param name="isShowDialog"></param>
+        </member>
+        <member name="M:Spire.PdfViewer.Wpf.PdfDocumentViewer.SaveToFile(System.String)">
+            <summary>
+            Save PDF documetns
+            </summary>
+            <param name="filePath"></param>
+        </member>
+        <member name="M:Spire.PdfViewer.Wpf.PdfDocumentViewer.SaveToFile(System.IO.Stream)">
+            <summary>
+            Pdf document to save the file stream.
+            </summary>
+            <param name="stream"></param>
+        </member>
+        <member name="M:Spire.PdfViewer.Wpf.PdfDocumentViewer.SaveAsImage(System.Int32,System.Double,System.Double)">
+            <summary>
+            Saves the specified page as Image
+            </summary>
+            <param name="pageNumber">The page index to be converted into image</param>
+            <param name="dpiX">Pictures X resolution</param>
+            <param name="dpiY">Pictures Y resolution</param>
+            <returns>Returns page as BitmapSource</returns>
+        </member>
+        <member name="M:Spire.PdfViewer.Wpf.PdfDocumentViewer.SaveAsImage(System.Int32,System.Int32,System.Double,System.Double)">
+            <summary>
+            Exports the specified pages as Images
+            </summary>
+            <param name="startIndex">The starting page index</param>
+            <param name="endIndex">The ending page index</param>
+            <param name="dpiX">Pictures X resolution</param>
+            <param name="dpiY">Pictures Y resolution</param>
+            <returns>Returns the specified pages as Images</returns>
+        </member>
+        <member name="M:Spire.PdfViewer.Wpf.PdfDocumentViewer.SaveAsImage(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Saves the specified page as specified size image
+            </summary>
+            <param name="pageNumber">The page index to be converted into image</param>
+            <returns>Returns page as BitmapSource</returns>
+        </member>
+        <member name="M:Spire.PdfViewer.Wpf.PdfDocumentViewer.SaveAsImage(System.String,System.Int32[],System.Int32,System.Int32)">
+            <summary>
+            Saves the specified PDF page range as specified size tiff file.
+            </summary>
+            <param name="tiffFilePath">Generating tiff file</param>
+            <param name="pagesNumbers">PDF page range</param>
+            <param name="imageWidth">Tiff image width</param>
+            <param name="imageHeight">Tiff image height</param>
+        </member>
+        <member name="M:Spire.PdfViewer.Wpf.PdfDocumentViewer.SaveAsImage(System.String,System.Int32[])">
+            <summary>
+            Saves the specified PDF page range as tiff file.
+            </summary>
+            <param name="tiffFilePath">Generating tiff file</param>
+            <param name="pagesNumbers">PDF page range</param>
+        </member>
+        <member name="M:Spire.PdfViewer.Wpf.PdfDocumentViewer.SaveAsThumbnail(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Get thumbnail.
+            </summary>
+            <param name="pageIndex">The page index.</param>
+            <param name="width">The width value.</param>
+            <param name="height">The height value.</param>
+            <returns>The thumbnail.</returns>
+        </member>
+        <member name="M:Spire.PdfViewer.Wpf.PdfDocumentViewer.GoToFirstPage">
+            <summary>
+            Go to first page.
+            </summary>
+        </member>
+        <member name="M:Spire.PdfViewer.Wpf.PdfDocumentViewer.GoToLastPage">
+            <summary>
+            Go to last page.
+            </summary>
+        </member>
+        <member name="M:Spire.PdfViewer.Wpf.PdfDocumentViewer.GoToNextPage">
+            <summary>
+            Go to next page.
+            </summary>
+        </member>
+        <member name="M:Spire.PdfViewer.Wpf.PdfDocumentViewer.GoToPage(System.Int32)">
+            <summary>
+            Jump to specified page
+            </summary>
+            <param name="index"> Destination page number</param>
+        </member>
+        <member name="M:Spire.PdfViewer.Wpf.PdfDocumentViewer.GoToPageNumber(System.Int32)">
+            <summary>
+            Go to page in multi-page mode.
+            </summary>
+            <param name="pageNumber">The page number.</param>
+        </member>
+        <member name="M:Spire.PdfViewer.Wpf.PdfDocumentViewer.GoToPageIndex(System.Int32)">
+            <summary>
+            Go to page in single page mode.
+            </summary>
+            <param name="index">The page index.</param>
+        </member>
+        <member name="M:Spire.PdfViewer.Wpf.PdfDocumentViewer.GoToPreviousPage">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Spire.PdfViewer.Wpf.PdfDocumentViewer.SearchText(System.String,System.Windows.Media.Color)">
+             <summary>
+            Set search text,highlight colors
+             </summary>
+             <param name="searchText">search text</param>
+             <param name="hightColor">highlightColor colors</param>
+        </member>
+        <member name="M:Spire.PdfViewer.Wpf.PdfDocumentViewer.SearchText(System.String,System.Windows.Media.Color,System.Boolean)">
+             <summary>
+            Set search text,highlight colors
+             </summary>
+             <param name="searchText">search text</param>
+             <param name="hightColor">highlightColor colors</param>
+             <param name="ignoreCase">bool ignoreCase</param>
+        </member>
+        <member name="M:Spire.PdfViewer.Wpf.PdfDocumentViewer.LoadFromStream(System.IO.Stream)">
+            <summary>
+            Load PDF document from stream.
+            </summary>
+            <param name="stream">Data stream</param>
+        </member>
+        <member name="M:Spire.PdfViewer.Wpf.PdfDocumentViewer.LoadFromFile(System.String)">
+            <summary>
+            Load PDF document from file.
+            </summary>
+            <param name="filePath">File path</param>
+        </member>
+        <member name="M:Spire.PdfViewer.Wpf.PdfDocumentViewer.LoadFromFile(System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="filePath">File path</param>
+            <param name="password">File password</param>
+        </member>
+        <member name="M:Spire.PdfViewer.Wpf.PdfDocumentViewer.ReDrawContent(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="findText"></param>
+        </member>
+        <member name="M:Spire.PdfViewer.Wpf.PdfDocumentViewer.CloseDocument">
+            <summary>
+            Close current pdf document.
+            </summary>
+        </member>
+        <member name="M:Spire.PdfViewer.Wpf.PdfDocumentViewer.UpdatePageIndex">
+            <summary>
+            Update the current page index.
+            </summary>
+        </member>
+        <member name="M:Spire.PdfViewer.Wpf.PdfDocumentViewer.ZoomTo(Spire.PdfViewer.Wpf.ZoomMode)">
+            <summary>
+            Zoom PDF document
+            </summary>
+            <param name="percentage">Zoom Mode</param>
+        </member>
+        <member name="M:Spire.PdfViewer.Wpf.PdfDocumentViewer.ZoomTo(System.Int32)">
+            <summary>
+            Zoom PDF document
+            </summary>
+            <param name="percentage">Zoom percentage</param>
+        </member>
+        <member name="M:Spire.PdfViewer.Wpf.PdfDocumentViewer.GetBookmarkContainer">
+            <summary>
+            Get PDF document bookmark container
+            </summary>
+            <returns> PDF document root bookmark</returns>
+        </member>
+        <member name="M:Spire.PdfViewer.Wpf.PdfDocumentViewer.GoToBookmark(Spire.PdfViewer.Wpf.PdfDocumentBookmark)">
+            <summary>
+            Go to specified bookmark
+            </summary>
+            <param name="bookmark">PDF document bookmark</param>
+        </member>
+        <member name="M:Spire.PdfViewer.Wpf.PdfDocumentViewer.GetAttachments">
+            <summary>
+            Get PDF document all of attachments
+            </summary>
+            <returns>PDF document all of attachments</returns>
+        </member>
+        <member name="M:Spire.PdfViewer.Wpf.PdfDocumentViewer.GetAttachmentAnnotaions">
+            <summary>
+            Get PDF document all of attachment annotations
+            </summary>
+            <returns>PDF document  all of attachment annotations</returns>
+        </member>
+        <member name="M:Spire.PdfViewer.Wpf.PdfDocumentViewer.GotoAttachmentAnnotation(Spire.PdfViewer.Wpf.PdfDocumentAttachmentAnnotation)">
+            <summary>
+            Go to PDF document attachment annotation
+            </summary>
+            <param name="annotation">PDF document attachment annotation </param>
+        </member>
+        <member name="M:Spire.PdfViewer.Wpf.PdfDocumentViewer.Rotate(Spire.PdfViewer.Wpf.RotateAngle)">
+            <summary>
+            Rotate PDF document
+            </summary>
+            <param name="angle">Rotate angle</param>
+        </member>
+        <member name="M:Spire.PdfViewer.Wpf.PdfDocumentViewer.GetDocumentInfomation">
+            <summary>
+            Get PDF document information 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Spire.PdfViewer.Wpf.PdfDocumentViewer.LoadFromHtml(System.String,System.String,System.Boolean,System.Boolean,System.Boolean)">
+            <summary>
+            Load web page as PDF document.
+            </summary>
+            <param name="inputUrl"></param>
+            <param name="convertPdfName"></param>
+            <param name="enableJavascript"></param>
+            <param name="enableHyperLink"></param>
+            <param name="autoDetectePageBreak"></param>
+        </member>
+        <member name="M:Spire.PdfViewer.Wpf.PdfDocumentViewer.LoadFromHtml(System.String,System.String)">
+            <summary>
+            Load web page as PDF document
+            </summary>
+            <param name="inputUrl">Html file path</param>
+            <param name="convertPdfName">Converted PDF document file path</param>
+        </member>
+        <member name="M:Spire.PdfViewer.Wpf.PdfDocumentViewer.VeryfyDocumentEncrypted(System.String)">
+            <summary>
+            Veryfy PDF doument whether to encrypt
+            </summary>
+            <param name="PdfDocument">PDF document file path</param>
+            <returns></returns>
+        </member>
+        <member name="M:Spire.PdfViewer.Wpf.PdfDocumentViewer.SetViewerMode(Spire.PdfViewer.Wpf.PdfViewerMode.PdfViewerMode)">
+            <summary>
+            Set PdfDocumentViewer display mode
+            </summary>
+            <param name="mode">Display mode</param>
+        </member>
+        <member name="M:Spire.PdfViewer.Wpf.PdfDocumentViewer.SetPageLayoutMode(Spire.PdfViewer.Wpf.PageLayoutMode)">
+            <summary>
+            Set PDF document page display mode
+            </summary>
+            <param name="pageMode">Page display mode</param>
+        </member>
+        <member name="M:Spire.PdfViewer.Wpf.PdfDocumentViewer.GetPageSize(System.Int32)">
+            <summary>
+            Get PDF page size
+            </summary>
+            <param name="percentage">Page index</param>
+        </member>
+        <member name="M:Spire.PdfViewer.Wpf.PdfDocumentViewer.GetThumbnailControl">
+            <summary>
+            Get thumbnail control
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Spire.PdfViewer.Wpf.PdfDocumentInfo">
+            <summary>
+            PDF document basic information
+            </summary>
+        </member>
+        <member name="P:Spire.PdfViewer.Wpf.PdfDocumentInfo.Title">
+            <summary>
+            PDF document title
+            </summary>
+        </member>
+        <member name="P:Spire.PdfViewer.Wpf.PdfDocumentInfo.Author">
+            <summary>
+            PDF document author
+            </summary>
+        </member>
+        <member name="P:Spire.PdfViewer.Wpf.PdfDocumentInfo.Creator">
+            <summary>
+            PDF document creator
+            </summary>
+        </member>
+        <member name="P:Spire.PdfViewer.Wpf.PdfDocumentInfo.Producer">
+            <summary>
+            PDF document producer
+            </summary>
+        </member>
+        <member name="P:Spire.PdfViewer.Wpf.PdfDocumentInfo.Keywords">
+            <summary>
+            PDF document keywords
+            </summary>
+        </member>
+        <member name="P:Spire.PdfViewer.Wpf.PdfDocumentInfo.Subject">
+            <summary>
+            PDF document subject
+            </summary>
+        </member>
+        <member name="P:Spire.PdfViewer.Wpf.PdfDocumentInfo.CreationDate">
+            <summary>
+            PDF document create date
+            </summary>
+        </member>
+        <member name="P:Spire.PdfViewer.Wpf.PdfDocumentInfo.ModificationDate">
+            <summary>
+            PDF document modification date
+            </summary>
+        </member>
+        <member name="F:Spire.PdfViewer.Wpf.PdfThumbnails.PageThumbnail.m_PageLabelColor">
+            <summary>
+            Set the color of the page label color in thumbnail
+            </summary>
+        </member>
+        <member name="F:Spire.PdfViewer.Wpf.PdfThumbnails.PageThumbnail.m_PageLabelSelectedColor">
+            <summary>
+            Set the color of the selected page label color in thumbnail
+            </summary>
+        </member>
+        <member name="P:Spire.PdfViewer.Wpf.PdfThumbnails.PageThumbnail.PageLabelColor">
+            <summary>
+            Set the color of the page label color in thumbnail
+            </summary>
+        </member>
+        <member name="P:Spire.PdfViewer.Wpf.PdfThumbnails.PageThumbnail.PageLabelSelectedColor">
+            <summary>
+            Set the color of the selected page label color in thumbnail
+            </summary>
+        </member>
+        <member name="T:Spire.PdfViewer.Wpf.PdfThumbnails.PdfDocumentThumbnail">
+            <summary>
+            PDF document thumbnail control
+            </summary>
+        </member>
+        <member name="F:Spire.PdfViewer.Wpf.PdfThumbnails.PdfDocumentThumbnail.m_PageLabelColor">
+            <summary>
+            Set the color of the page label color in thumbnail
+            </summary>
+        </member>
+        <member name="F:Spire.PdfViewer.Wpf.PdfThumbnails.PdfDocumentThumbnail.m_PageLabelSelectedColor">
+            <summary>
+            Set the color of the selected page label color in thumbnail
+            </summary>
+        </member>
+        <member name="P:Spire.PdfViewer.Wpf.PdfThumbnails.PdfDocumentThumbnail.PageLabelColor">
+            <summary>
+            Set the color of the page label in thumbnail
+            </summary>
+        </member>
+        <member name="P:Spire.PdfViewer.Wpf.PdfThumbnails.PdfDocumentThumbnail.PageLabelSelectedColor">
+            <summary>
+            Set the color of the selected page label in thumbnail
+            </summary>
+        </member>
+        <member name="P:Spire.PdfViewer.Wpf.PdfThumbnails.PdfDocumentThumbnail.ZoomPercent">
+            <summary>
+            thumnail zoom percentage
+            </summary>
+        </member>
+        <member name="M:Spire.PdfViewer.Wpf.PdfThumbnails.PdfDocumentThumbnail.m_viewer_DocumentLoaded(System.Object,System.EventArgs)">
+            <summary>
+            Raises the Load event.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">A EventArgs that contains the event data.</param>
+        </member>
+        <member name="M:Spire.PdfViewer.Wpf.PdfThumbnails.PdfDocumentThumbnail.m_viewer_PageNumberChanged(System.Object,System.EventArgs)">
+            <summary>
+            Raises the PageNumberChanged event.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">A EventArgs that contains the event data.</param>
+        </member>
+        <member name="M:Spire.PdfViewer.Wpf.PdfThumbnails.PdfDocumentThumbnail.OnRender(System.Windows.Media.DrawingContext)">
+            <summary>
+            Raises the Paint event.
+            </summary>
+            <param name="e">A args that contains event data.</param>
+        </member>
+        <member name="M:Spire.PdfViewer.Wpf.PdfThumbnails.PdfDocumentThumbnail.OnRenderSizeChanged(System.Windows.SizeChangedInfo)">
+            <summary>
+            Raises the Size Changed event.
+            </summary>
+            <param name="e">A args that contains event data.</param>
+        </member>
+        <member name="F:Spire.PdfViewer.Wpf.PdfThumbnails.Thumbnails.m_PageLabelColor">
+            <summary>
+            Set the color of the page label color in thumbnail
+            </summary>
+        </member>
+        <member name="F:Spire.PdfViewer.Wpf.PdfThumbnails.Thumbnails.m_PageLabelSelectedColor">
+            <summary>
+            Set the color of the selected page label color in thumbnail
+            </summary>
+        </member>
+        <member name="P:Spire.PdfViewer.Wpf.PdfThumbnails.Thumbnails.PageLabelColor">
+            <summary>
+            Set the color of the page label color in thumbnail
+            </summary>
+        </member>
+        <member name="P:Spire.PdfViewer.Wpf.PdfThumbnails.Thumbnails.PageLabelSelectedColor">
+            <summary>
+            Set the color of the selected page label color in thumbnail
+            </summary>
+        </member>
+        <member name="P:Spire.PdfViewer.Wpf.PdfThumbnails.Thumbnails.ZoomPercent">
+            <summary>
+            thumnail zoom percentage
+            </summary>
+        </member>
+        <member name="P:Spire.PdfViewer.Wpf.PdfThumbnails.Thumbnails.Viewer">
+             <summary>
+            get or set thumnail relative PdfDocumentViewer
+             </summary>
+        </member>
+        <member name="M:Spire.PdfViewer.Wpf.PdfThumbnails.Thumbnails.m_viewer_DocumentLoaded(System.Object,System.EventArgs)">
+            <summary>
+            PdfDocumentViewer loaded event handler.
+            </summary>
+            <param name="sender">The PdfDocumentViewer.</param>
+            <param name="e">The data of EventArgs contains all infos.</param>
+        </member>
+        <member name="M:Spire.PdfViewer.Wpf.PdfThumbnails.Thumbnails.m_viewer_PageNumberChanged(System.Object,System.EventArgs)">
+            <summary>
+            PdfDocumentViewer PageNumberChanged event handler.
+            </summary>
+            <param name="sender">The PdfDocumentViewer.</param>
+            <param name="e">The data of EventArgs contains all infos.</param>
+        </member>
+        <member name="M:Spire.PdfViewer.Wpf.PdfThumbnails.Thumbnails.OnRender(System.Windows.Media.DrawingContext)">
+            <summary>
+            Render event.
+            </summary>
+            <param name="e">The data of DrawingContext contains all infos.</param>
+        </member>
+        <member name="M:Spire.PdfViewer.Wpf.PdfThumbnails.Thumbnails.OnMouseLeftButtonDown(System.Windows.Input.MouseButtonEventArgs)">
+            <summary>
+            MouseLeftButtonDown event.
+            </summary>
+            <param name="e">The data of MouseButtonEventArgs contains all infos.</param>
+        </member>
+        <member name="M:Spire.PdfViewer.Wpf.PdfThumbnails.Thumbnails.OnRenderSizeChanged(System.Windows.SizeChangedInfo)">
+            <summary>
+            RenderSizeChanged event.
+            </summary>
+            <param name="e">The data of SizeChangedInfo contains all infos.</param>
+        </member>
+        <member name="E:Spire.PdfViewer.Wpf.PdfViewer.CurrentPageChange">
+            <summary>
+            Occurs when the Current Page is Change
+            </summary>
+        </member>
+        <member name="P:Spire.PdfViewer.Wpf.PdfViewer.FileName">
+            <summary>
+            Gets current opened pdf file name.
+            </summary>
+        </member>
+        <member name="P:Spire.PdfViewer.Wpf.PdfViewer.PageCount">
+            <summary>
+            Gets the current number of display pages for the content.
+            </summary>
+        </member>
+        <member name="P:Spire.PdfViewer.Wpf.PdfViewer.IsToolBarVisible">
+            <summary>
+            Gets or sets whether is visible of toolbar.
+            </summary>
+        </member>
+        <member name="P:Spire.PdfViewer.Wpf.PdfViewer.PrintDocument">
+            <summary>
+            Gets the Print document
+            </summary>
+        </member>
+        <member name="P:Spire.PdfViewer.Wpf.PdfViewer.CurrentPageNumber">
+            <summary>
+            Gets the page number for the currently displayed page.
+            </summary>
+        </member>
+        <member name="E:Spire.PdfViewer.Wpf.PdfViewer.DocumentLoaded">
+            <summary>
+            Occurs after a document is opened.
+            </summary>
+        </member>
+        <member name="P:Spire.PdfViewer.Wpf.PdfViewer.IgnoreCase">
+            <summary>
+            the found text ignore case
+            </summary>
+        </member>
+        <member name="P:Spire.PdfViewer.Wpf.PdfViewer.FindTextHighLightColor">
+            <summary>
+            The found text to highlight
+            </summary>
+        </member>
+        <member name="P:Spire.PdfViewer.Wpf.PdfViewer.ViewerBackgroundColor">
+            <summary>
+            Set the PdfViewer background color
+            </summary>
+        </member>
+        <member name="M:Spire.PdfViewer.Wpf.PdfViewer.SaveAsImage(System.Int32,System.Double,System.Double)">
+            <summary>
+            Saves page to image.
+            </summary>
+            <param name="pageIndex">Page number</param>
+            <param name="dpiX">Pictures X resolution</param>
+            <param name="dpiY">Pictures Y resolution</param>
+            <returns></returns>
+        </member>
+        <member name="M:Spire.PdfViewer.Wpf.PdfViewer.SaveAsImage(System.Int32,System.Int32,System.Double,System.Double)">
+            <summary>
+            Saves page to image.
+            </summary>
+            <param name="startPageNumber">start page number</param>
+            <param name="endPageNumber">end page number</param>
+            <param name="dpiX">Pictures X resolution</param>
+            <param name="dpiY">Pictures Y resolution</param>
+            <returns></returns>
+        </member>
+        <member name="M:Spire.PdfViewer.Wpf.PdfViewer.SaveAsImage(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Saves page to specified size image.
+            </summary>
+            <param name="pageNumber">Page number</param>
+            <returns></returns>
+        </member>
+        <member name="M:Spire.PdfViewer.Wpf.PdfViewer.SaveAsImage(System.String,System.Int32[],System.Int32,System.Int32)">
+            <summary>
+            Saves the specified PDF page range as tiff file.
+            </summary>
+            <param name="tiffFilePath">Generating tiff file</param>
+            <param name="pagesNumbers">PDF page range</param>
+        </member>
+        <member name="M:Spire.PdfViewer.Wpf.PdfViewer.SaveAsImage(System.String,System.Int32[])">
+            <summary>
+            Saves the specified PDF page range as tiff file.
+            </summary>
+            <param name="tiffFilePath">Generating tiff file</param>
+            <param name="pagesNumbers">PDF page range</param>
+        </member>
+        <member name="M:Spire.PdfViewer.Wpf.PdfViewer.GoToPage(System.Int32)">
+            <summary>
+            Jump to a specified page number. 
+            </summary>
+            <param name="index">The number of the page to jump to.</param>
+        </member>
+        <member name="M:Spire.PdfViewer.Wpf.PdfViewer.LoadFromStream(System.IO.Stream)">
+            <summary>
+            Load a PDF document from a Stream. 
+            </summary>
+            <param name="stream">A Stream containing a PDF document.</param>
+        </member>
+        <member name="M:Spire.PdfViewer.Wpf.PdfViewer.LoadFromFile(System.String)">
+            <summary>
+            Load a PDF document from a file. 
+            </summary>
+            <param name="filePath">The name of the file that contains the PDF document.</param>
+        </member>
+        <member name="M:Spire.PdfViewer.Wpf.PdfViewer.LoadFromFile(System.String,System.String)">
+            <summary>
+            Load a PDF document from a file. 
+            </summary>
+            <param name="fileName">file name</param>
+            <param name="password">password</param>
+        </member>
+        <member name="M:Spire.PdfViewer.Wpf.PdfViewer.SaveToFile(System.String)">
+            <summary>
+            Save PDF documetns
+            </summary>
+            <param name="filePath"></param>
+        </member>
+        <member name="M:Spire.PdfViewer.Wpf.PdfViewer.SaveToFile(System.IO.Stream)">
+            <summary>
+            Stream to save PDF document
+            </summary>
+            <param name="stream"></param>
+        </member>
+        <member name="M:Spire.PdfViewer.Wpf.PdfViewer.Print">
+            <summary>
+            Print pdf document
+            </summary>
+        </member>
+        <member name="P:Spire.PdfViewer.Wpf.PdfViewer.PrintDialog">
+            <summary>
+            Set print parnameters
+            </summary>
+        </member>
+        <member name="P:Spire.PdfViewer.Wpf.PdfViewer.ShowToolbar">
+            <summary>
+            Gets and sets the visibility of the toolbar
+            </summary>
+        </member>
+        <member name="P:Spire.PdfViewer.Wpf.PdfViewer.HorizontalScrollBarVisibility">
+            <summary>
+            Gets and sets the HorizontalScrollBar Visibility of the PdfDocmentViewer
+            </summary>
+        </member>
+        <member name="P:Spire.PdfViewer.Wpf.PdfViewer.VerticalScrollBarVisibility">
+            <summary>
+            Gets and sets the VerticalScrollBar Visibility of the PdfDocmentViewer
+            </summary>
+        </member>
+        <member name="M:Spire.PdfViewer.Wpf.PdfViewer.CloseDocument">
+            <summary>
+            Close current pdf document.
+            </summary>
+        </member>
+        <member name="M:Spire.PdfViewer.Wpf.PdfViewer.GetThumbnailControl">
+            <summary>
+            Gets PDF document thumnail control
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Spire.PdfViewer.Wpf.PdfViewer.Rotate(Spire.PdfViewer.Wpf.RotateAngle)">
+            <summary>
+            Rotate PDF document
+            </summary>
+            <param name="angle"></param>
+        </member>
+        <member name="M:Spire.PdfViewer.Wpf.PdfViewer.GetBookmarkContainer">
+            <summary>
+            Gets PDF document root bookmark
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Spire.PdfViewer.Wpf.PdfViewer.GetDocumentAttachments">
+            <summary>
+            Gets PDF document all of attachments
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Spire.PdfViewer.Wpf.PdfViewer.GetDocumentAttachmentAnnotations">
+            <summary>
+            Gets PDF document all of attachment annotations
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Spire.PdfViewer.Wpf.PdfViewer.SetViewerMode(Spire.PdfViewer.Wpf.PdfViewerMode.PdfViewerMode)">
+            <summary>
+            Sets PdfViewer display mode
+            </summary>
+            <param name="mode"></param>
+        </member>
+        <member name="M:Spire.PdfViewer.Wpf.PdfViewer.SetPageLayouMode(Spire.PdfViewer.Wpf.PageLayoutMode)">
+            <summary>
+            Sets PDF document page display mode
+            </summary>
+            <param name="mode"></param>
+        </member>
+        <member name="M:Spire.PdfViewer.Wpf.PdfViewer.GetPageSize(System.Int32)">
+            <summary>
+            Get PDF page size
+            </summary>
+            <param name="percentage">Page index</param>
+        </member>
+        <member name="T:Spire.PdfViewer.Wpf.PageLayoutMode">
+            <summary>
+            PdfDocumentViewer Page display mode 
+            </summary>
+        </member>
+        <member name="T:Spire.PdfViewer.Wpf.PdfViewerMode.PdfViewerMode">
+            <summary>
+            PdfDocumentViewer display mode
+            </summary>
+        </member>
+        <member name="P:Spire.PdfViewer.Wpf.VirtualizingPagePanel.FindText">
+            <summary>
+            Set find text
+            </summary>
+        </member>
+        <member name="P:Spire.PdfViewer.Wpf.VirtualizingPagePanel.FindTextHighLightColor">
+            <summary>
+            find text color
+            </summary>
+        </member>
+        <member name="M:Spire.PdfViewer.Wpf.VirtualizingPagePanel.GetPageIndexesAtPosition(System.Double,System.Double,Spire.PdfViewer.Wpf.PageLayoutMode)">
+            <summary>
+            Get pages by vertical scrolling position,zoom factor,page layout mode. 
+            </summary>
+            <param name="vScrollPosition">The vertical scrolling position.</param>
+            <param name="zoomFactor">The zoom factor.</param>
+            <param name="pageMode">The page layout mode.</param>
+            <returns></returns>
+        </member>
+        <member name="F:Spire.PdfViewer.Wpf.VirtualizingPagePanel.m_PageSpacing">
+            <summary>
+            All Pages Bounds
+            </summary>
+        </member>
+        <member name="M:Spire.PdfViewer.Wpf.VirtualizingPagePanel.Draw(System.Windows.Media.DrawingContext,System.Double,Spire.Pdf.General.Render.Page)">
+            <summary>
+            Draw image.
+            </summary>
+            <param name="dc">The drawingContext</param>
+            <param name="zoomFactor">The zoom factor</param>
+            <param name="page">The page</param>
+        </member>
+        <member name="M:Spire.PdfViewer.Wpf.VirtualizingPagePanel.DrawPageInternal(System.Windows.Media.DrawingContext,Spire.Pdf.General.Render.Page)">
+            <summary>
+            Draw page internal.
+            </summary>
+            <param name="dc">The drawing context</param>
+            <param name="page">The page</param>
+        </member>
+        <member name="M:Spire.PdfViewer.Wpf.VirtualizingPagePanel.GetZoomedPage(System.Windows.Media.DrawingGroup,Spire.Pdf.General.Render.Page)">
+            <summary>
+            Get zoomed page.
+            </summary>
+            <param name="dg">The drawing group</param>
+            <param name="page">The page</param>
+            <returns>The drawing group</returns>
+        </member>
+        <member name="M:Spire.PdfViewer.Wpf.VirtualizingPagePanel.DrawHighLight(System.Windows.Media.DrawingContext,System.String,System.Single,System.Single,Spire.Pdf.General.Render.Page)">
+            <summary>
+            Draw high light.
+            </summary>
+            <param name="dc">The drawing context</param>
+            <param name="findText">The find text</param>
+            <param name="x">The x</param>
+            <param name="y">The y</param>
+            <param name="page">The page</param>
+        </member>
+        <member name="M:Spire.PdfViewer.Wpf.VirtualizingPagePanel.Initialize">
+            <summary>
+            Initialize.
+            </summary>
+        </member>
+        <member name="M:Spire.PdfViewer.Wpf.VirtualizingPagePanel.Initialize(System.Single)">
+            <summary>
+            Initialize.
+            </summary>
+            <param name="zoomFactor">The zoom factor.</param>
+        </member>
+        <member name="M:Spire.PdfViewer.Wpf.VirtualizingPagePanel.AdjustPageBoundes(Spire.PdfViewer.Wpf.PageLayoutMode,System.Single)">
+            <summary>
+            Adjust page bounds when switch page layout mode.
+            </summary>
+            <param name="pageMode">The page layout mode.</param>
+            <param name="zoomFactor">The zoom factor.</param>
+        </member>
+        <member name="T:Spire.PdfViewer.Wpf.ZoomMode">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Spire.PdfViewer.Wpf.ZoomMode.Default">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Spire.PdfViewer.Wpf.ZoomMode.FitPage">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Spire.PdfViewer.Wpf.ZoomMode.FitWidth">
+            <summary>
+            
+            </summary>
+        </member>
+    </members>
+</doc>
